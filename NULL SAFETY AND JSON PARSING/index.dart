@@ -26,3 +26,6 @@ void main() {
   print(price);
   // null safety done
 }
+// json parsing 
+// JSON (JavaScript Object Notation) ek common data format hai jo APIs aur configurations ke liye use hota hai. Dart me JSON parsing karne ke liye dart:convert package ka use hota hai.
+
