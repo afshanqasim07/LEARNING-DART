@@ -38,7 +38,30 @@ void main() {
   // 5. Looping Through a Map
 // Agar aap poore map ke elements ko iterate karna chahein, toh .forEach() ya for-in loop use kar sakte hain.
   userid.forEach((key, value) {
-    print('$key : $value' );
+    print('$key : $value');
   });
-  
+  // set in dart
+  // Set ek unordered collection hoti hai jo duplicate values allow nahi karti. Matlab agar aap ek Set mein koi duplicate value add karenge, to wo automatically ignore ho jayegi.
+  Set<int> numbers = {1, 2, 3, 4, 5, 2, 3};
+  print(numbers);
+  // it will egnore the 2 and 3 to write it again
+  // to make an empty set
+  Set<String> names = Set();
+  names.add('afshan');
+  names.add('ali');
+  names.add('murtaza');
+  print(names);
+  names.remove('murtaza');
+  print(names);
+  // union and intersection
+  Set<int> num1 = {1, 2, 3};
+  Set<int> num2 = {4, 3, 6};
+  Set union = num1.union(num2);
+  print(union);
+  // intersection
+  Set intersection = num1.intersection(num2);
+  print(intersection);
+  // to conver set into list
+  List<String> namelist = names.toList();
+  print(namelist);
 }
